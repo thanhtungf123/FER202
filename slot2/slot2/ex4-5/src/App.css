@@ -1,0 +1,33 @@
+.Logo {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logo {
+  width: 1000px;
+  height: auto;
+}
+
+hr {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-style: italic;
+  color: gray;
+}
+
+.description {
+  font-size: 14px;
+  margin-top: 10px;
+  color: black;
+}
