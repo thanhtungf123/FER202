@@ -1,0 +1,81 @@
+.bg-orange {
+    background-color: #f4a261;
+  }
+  
+  .header {
+    padding: 20px 0;
+  }
+  
+  .text-white a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .text-white a:hover {
+    text-decoration: underline;
+  }
+  
+  .banner-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .student-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .student-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+  
+  .form-check {
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100px;
+  }
+  
+  .footer {
+    padding: 20px 0;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .social-icons i:hover {
+    color: #ddd;
+  }
+  
+  .bg-orange {
+    background-color: #f4a261;
+  }
+  
+  .footer {
+    font-size: 16px;
+  }
+  
+  .footer a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    color: #444;
+  }
+  

@@ -1,0 +1,45 @@
+/* Header */
+.header {
+    background-color: #e2e3e4; /* Light gray */
+    padding: 50px;
+    text-align: center;
+  }
+  
+/* Icon Section */
+.icon-image {
+  max-width: 100px; /* Giới hạn kích thước ảnh */
+  height: auto;
+  margin: 10px auto; /* Căn giữa dọc và ngang */
+  display: block;
+}
+
+.icon-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.icon-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #d7c3c3; /* Nền hồng nhạt */
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.bg-light {
+  background-color: #f8f9fa; /* Nền sáng */
+}
