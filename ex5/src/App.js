@@ -1,47 +1,38 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 const App = () => {
   return (
-    <div>
-      {/* Header */}
-      <div className="header">
-        <h1>Let's test the grid!</h1>
+    <div className="app">
+      <div className="header bg-light p-3">
+        <h2>Let's test the grid!</h2>
+      </div>
+      
+      <div className="container">
+      <div className="row">
+        <div className="col-md-6 bg-secondary text-light p-3">First col</div>
+        <div className="col-md-6 bg-secondary text-light p-3">Second col</div>
       </div>
 
-      {/* Grid Section */}
-      <div className="container grid-section">
-        {/* Row 1 */}
-        <div className="row">
-          <div className="col first-col">First col</div>
-          <div className="col second-col">Second col</div>
-        </div>
-
-        {/* Row 2 */}
-        <div className="row">
-          <div className="col large-col">col</div>
-          <div className="col large-col">col</div>
-          <div className="col large-col">col</div>
-        </div>
-
-        {/* Row 3 */}
-        <div className="row">
-          <div className="col small-col">col</div>
-          <div className="col small-col">col</div>
-          <div className="col small-col">col</div>
-          <div className="col small-col">col</div>
-        </div>
+      <div className="row mt-0">
+        <div className="col-md-4 bg-secondary text-light p-3">col</div>
+        <div className="col-md-4 bg-secondary text-light p-3">col</div>
+        <div className="col-md-4 bg-secondary text-light p-3">col</div>
       </div>
 
-     {/* Footer cho phần 1 */}
-      <footer className="text-center py-3" style={{ backgroundColor: "#d7c3c3" }}>
-        <strong>Created by ABC!</strong>
-      </footer>
+      <div className="row mt-0">
+        <div className="col-md-3 bg-secondary text-light p-3">col</div>
+        <div className="col-md-3 bg-secondary text-light p-3">col</div>
+        <div className="col-md-3 bg-secondary text-light p-3">col</div>
+        <div className="col-md-3 bg-secondary text-light p-3">col</div>
       </div>
-
+      </div>
+      <div className="footer text-dark text-center p-3 mt-3">
+        <h2>Created by ABC!</h2>
+      </div>
+    </div>
   );
 };
 
 export default App;
-

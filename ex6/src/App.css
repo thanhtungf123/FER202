@@ -1,0 +1,30 @@
+.carousel-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  height: 530px;
+  font-size: 100px;
+  color: grey;
+  text-align: center;
+}
+
+.product-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  height: 280px;
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+}
+
+.card del {
+  color: #999;
+  margin-right: 5px;
+}

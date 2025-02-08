@@ -5,39 +5,32 @@ import './FirstBootstrap.css';
 
 const FirstBootstrap = () => {
   return (
-    <div>
-      {/* Header cho phần 2 */}
-      <div className="bg-light py-5 text-center">
-        <h1>My First Bootstrap Page</h1>
+    <div className="text-center">
+      <div className="bg-light p-4 mb-4">
+        <h2>My First Bootstrap Page</h2>
       </div>
-
-      {/* Icon Section */}
-      <div className="container text-center my-4">
-        <div className="row justify-content-center">
-          {/* Icon HTML */}
-          <div className="col-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-              alt="HTML Logo"
-              className="img-fluid icon-image"
-            />
-          </div>
-          {/* Icon CSS */}
-          <div className="col-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-              alt="CSS Logo"
-              className="img-fluid icon-image"
-            />
-          </div>
-          {/* Icon Bootstrap */}
-          <div className="col-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
-              alt="Bootstrap Logo"
-              className="img-fluid icon-image"
-            />
-          </div>
+      
+      <div className="row justify-content-center">
+        <div className="col-md-3">
+          <img 
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
+            alt="HTML5" 
+            className="img-fluid" 
+          />
+        </div>
+        <div className="col-md-3">
+          <img 
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
+            alt="CSS3" 
+            className="img-fluid" 
+          />
+        </div>
+        <div className="col-md-3">
+          <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" 
+            alt="Bootstrap" 
+            className="img-fluid" 
+          />
         </div>
       </div>
     </div>

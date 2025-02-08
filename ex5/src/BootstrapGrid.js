@@ -1,53 +1,50 @@
 import React from "react";
+import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './BootstrapGrid.css';
+import "./BootstrapGrid.css";
 
 const BootstrapGrid = () => {
   return (
     <div>
-      {/* Header Section */}
-      <div className="p-5 bg-light text-center">
-        <h1>Let's test the grid!</h1>
-      </div>
+      {/* Header */}
+      <Navbar bg="light" expand="lg" className="custom-navbar">
+      <Container><Navbar.Brand href="#">Let's test the grid!</Navbar.Brand>
+      </Container>
+      </Navbar>
+        <Container>
+          <Nav className="ml-auto">
+            <Nav.Link href="#" active>Active</Nav.Link>
+            <Nav.Link href="#">Link</Nav.Link>
+            <Nav.Link href="#">Link</Nav.Link>
+            <Nav.Link disabled>Disabled</Nav.Link>
+          </Nav>
+        </Container>
+  
 
-      {/* Navigation Links */}
-      <nav className="nav justify-content-center py-3">
-        <a className="nav-link active" href="#">
-          Active
-        </a>
-        <a className="nav-link" href="#">
-          Link
-        </a>
-        <a className="nav-link" href="#">
-          Link
-        </a>
-        <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">
-          Disabled
-        </a>
-      </nav>
+      {/* Main Content */}
+      <Container className="main-content mt-4">
+        <Row className="row">
+          <Col md={6} className="bg-secondary text-light p-3">First col</Col>
+          <Col md={6} className="bg-secondary text-light p-3">Second col</Col>
+        </Row>
 
-      {/* Grid Section */}
-      <div className="container my-4">
-        <div className="row">
-          <div className="col border">First col</div>
-          <div className="col border">Second col</div>
-        </div>
-        <div className="row">
-          <div className="col border">col</div>
-          <div className="col border">col</div>
-          <div className="col border">col</div>
-        </div>
-        <div className="row">
-          <div className="col border">col</div>
-          <div className="col border">col</div>
-          <div className="col border">col</div>
-          <div className="col border">col</div>
-        </div>
-      </div>
+        <Row className="row mt-0">
+          <Col md={4} className="bg-secondary text-light p-3">col</Col>
+          <Col md={4} className="bg-secondary text-light p-3">col</Col>
+          <Col md={4} className="bg-secondary text-light p-3">col</Col>
+        </Row>
 
-      {/* Footer Section */}
-      <footer className="text-center bg-secondary text-white py-3">
-        <p>Created by ABC!</p>
+        <Row className="row mt-0">
+          <Col md={3} className="bg-secondary text-light p-3">col</Col>
+          <Col md={3} className="bg-secondary text-light p-3">col</Col>
+          <Col md={3} className="bg-secondary text-light p-3">col</Col>
+          <Col md={3} className="bg-secondary text-light p-3">col</Col>
+        </Row>
+      </Container>
+
+      {/* Footer */}
+      <footer className="custom-footer">
+        <h3>Created by ABC!</h3>
       </footer>
     </div>
   );

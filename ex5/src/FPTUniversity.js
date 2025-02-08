@@ -1,44 +1,50 @@
 import React from "react";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './FPTUniversity.css';
+import "./FPTUniversity.css";
 
 const FPTUniversity = () => {
   return (
     <div>
-      {/* Header Section */}
-      <header className="text-center p-3" style={{ backgroundColor: "#f39c12", color: "white" }}>
+      {/* Header */}
+      <header className="header">
         <img
-          src="https://www.senviet.art/wp-content/uploads/2021/12/fptulogo.jpg"
-          alt="FPT Logo"
-          style={{ width: "150px" }}
+          src="fptulogo.jpg"
+          alt="FPT University Logo"
+          className="header-logo"
         />
-        <nav className="nav justify-content-center">
-          <a className="nav-link text-white fw-bold" href="#home">
+          {/* Navbar */}
+        <Navbar className="custom-navbar">
+        <Nav className="mx-auto">
+          <Nav.Link href="#home" className="nav-link">
             Home
-          </a>
-          <a className="nav-link text-white fw-bold" href="#about">
+          </Nav.Link>
+          <Nav.Link href="#about" className="nav-link">
             About
-          </a>
-          <a className="nav-link text-white fw-bold" href="#contact">
+          </Nav.Link>
+          <Nav.Link href="#contact" className="nav-link">
             Contact
-          </a>
-        </nav>
+          </Nav.Link>
+        </Nav>
+      </Navbar>
       </header>
 
       {/* About Section */}
-      <section id="about" className="text-center py-5">
-        <h2>About</h2>
+      <Container className="content-section" id="about">
+        <h2 className="section-title">About</h2>
         <p>This is the about section of the website.</p>
-      </section>
+      </Container>
 
       {/* Contact Section */}
-      <section id="contact" className="text-center py-5">
-        <h2>Contact</h2>
-        <p>For any inquiries, please contact us at example@example.com.</p>
-      </section>
+      <Container className="content-section" id="contact">
+        <h2 className="section-title">Contact</h2>
+        <p>
+          For any inquiries, please contact us at <a href="mailto:example@example.com">example@example.com</a>.
+        </p>
+      </Container>
 
-      {/* Footer Section */}
-      <footer className="text-center py-3" style={{ backgroundColor: "#f39c12", color: "white" }}>
+      {/* Footer */}
+      <footer className="footer">
         <p>© 2023 Website. All rights reserved.</p>
       </footer>
     </div>
