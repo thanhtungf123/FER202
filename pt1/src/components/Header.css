@@ -1,0 +1,16 @@
+.custom-navbar {
+    background-color: #f7a436;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    width: 120px;
+  }
+  
+  .search-bar {
+    padding: 5px 10px;
+  }
+
+  .ml-auto {
+    margin-right: auto;
+  }
