@@ -1,0 +1,267 @@
+/* 🌍 Reset chung */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* 🏆 Tiêu đề */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 🌗 Toggle Dark Mode */
+.toggle-btn {
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.toggle-btn:hover {
+  background-color: #45a049;
+}
+
+/* 🔍 Tìm kiếm */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.dark-mode .search-input {
+  background-color: #333;
+  color: white;
+  border: 1px solid #777;
+}
+
+/* 🍽️ Danh sách món ăn */
+.dishes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.dish-item {
+  border: 1px solid #ccc;
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  transition: transform 0.2s, background-color 0.3s, color 0.3s;
+}
+
+.dish-item:hover {
+  transform: scale(1.05);
+}
+
+/* 🌙 Dark Mode - Card */
+.dark-mode .dish-item {
+  background-color: #333; /* Màu nền tối hơn để dễ đọc */
+  color: white; /* Màu chữ sáng để hiển thị nội dung */
+  border-color: #555;
+}
+
+/* 📝 Tiêu đề món ăn */
+.dish-item h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.dark-mode .dish-item h3 {
+  color: #fff; /* Giữ tiêu đề sáng hơn trong dark mode */
+}
+
+/* 📝 Mô tả món ăn */
+.dish-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.dark-mode .dish-item p {
+  color: #ccc; /* Mô tả sáng hơn để dễ đọc */
+}
+
+/* 🍕 Ảnh món ăn */
+.dish-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 🟩 Nút "Thêm vào giỏ" */
+.dish-item button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.dish-item button:hover {
+  background-color: #45a049;
+}
+
+/* 🌙 Dark Mode - Nút */
+.dark-mode .dish-item button {
+  background-color: #2ecc71;
+}
+
+.dark-mode .dish-item button:hover {
+  background-color: #27ae60;
+}
+
+/* 🛒 Giỏ hàng */
+.cart-container {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* 🌙 Dark Mode - Giỏ hàng */
+.dark-mode .cart-container {
+  background-color: #222;
+  color: white;
+  border-color: #555;
+}
+
+.dark-mode .cart-container h2 {
+  color: white;
+}
+
+/* 📝 Danh sách món ăn trong giỏ hàng */
+.cart-container ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.cart-container li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.dark-mode .cart-container li {
+  border-bottom: 1px solid #444;
+}
+
+/* 🛑 Nút xóa món */
+.cart-container button {
+  padding: 6px 12px;
+  margin-left: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.cart-container button:hover {
+  background-color: #c0392b;
+}
+
+/* 🌙 Dark Mode - Nút giỏ hàng */
+.dark-mode .cart-container button {
+  background-color: #ff5555;
+}
+
+.dark-mode .cart-container button:hover {
+  background-color: #cc4444;
+}
+
+/* 🏷 Tổng giá trị đơn hàng */
+.cart-summary {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* 💳 Thanh toán */
+.checkout-container {
+  margin-top: 20px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.checkout-container button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.checkout-container button:hover {
+  background-color: #2980b9;
+}
+
+.dark-mode .checkout-container {
+  background-color: #222;
+  color: white;
+  border-color: #555;
+}
