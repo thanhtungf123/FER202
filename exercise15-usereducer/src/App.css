@@ -1,0 +1,252 @@
+/* Container chung cho các component */
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề chung */
+h1, h2, h3, h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* ------------------------- ChangeNameAge Styles ------------------------- */
+
+/* Container của ChangeNameAge */
+.change-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+.change-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* Kết quả hiển thị */
+.result-box {
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Input styling */
+.form-control {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ------------------------- Counter Styles ------------------------- */
+
+/* Container của Counter */
+.counter-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của Counter */
+.counter-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Các button */
+button {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hiệu ứng hover cho button */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Các button trong Counter */
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ------------------------- ItemList Styles ------------------------- */
+
+/* Style cho container của ItemList */
+.item-list-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+button {
+  font-size: 1rem;
+  width: auto;
+  padding: 12px 24px;
+  min-width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Hiệu ứng hover cho button */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Danh sách item */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item .btn {
+  margin-left: 5px;
+}
+
+/* Chỉnh sửa item */
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.5);
+}
+
+/* ------------------------- QuestionBank Styles ------------------------- */
+
+/* Cải thiện style cho câu hỏi */
+h4, h5 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Cải thiện style cho ProgressBar */
+.progress-bar {
+  background-color: #007bff !important;
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(0, 123, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(0, 123, 255, 0.15) 50%, rgba(0, 123, 255, 0.15) 75%, transparent 75%, transparent);
+}
+
+/* Cải thiện style cho Timer */
+.timer {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e83e8c;
+}
+
+/* Các nút trong QuestionBank */
+button:focus {
+  outline: none;
+}
+
+/* Button cho câu hỏi */
+button {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+/* Hiệu ứng hover cho button */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Style cho kết quả trả lời */
+.text-center p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.text-center .text-success {
+  color: green;
+}
+
+.text-center .text-danger {
+  color: red;
+}
+
+/* Tiến trình trả lời câu hỏi */
+.progress-bar {
+  background-color: #007bff;
+}
+
+/* Style cho kết quả */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+/* Nút Restart Quiz */
+button:focus {
+  outline: none;
+}
+
+/* Các dropdown */
+.dropdown-toggle {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.dropdown-menu {
+  min-width: 200px;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
