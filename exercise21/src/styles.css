@@ -1,0 +1,114 @@
+/* src/styles.css */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #ff8c00 !important;
+}
+
+.card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #343a40;
+}
+
+h3 {
+  color: #007bff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+li a:hover {
+  color: #ff8c00;
+}
+
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-small {
+  max-width: 400px;  /* Giới hạn chiều rộng card */
+  margin: 0 auto;  /* Căn giữa card */
+}
+
+.card-small .card-body {
+  padding: 15px;  /* Giảm padding của card */
+}
+
+.card-small .card-title {
+  font-size: 1.2rem;  /* Giảm kích thước tiêu đề */
+}
+
+.card-small .card-text {
+  font-size: 1rem;  /* Giảm kích thước mô tả */
+}
+
+.card-small .btn {
+  font-size: 0.9rem;  /* Giảm kích thước của nút */
+  padding: 5px 10px;  /* Giảm kích thước padding của nút */
+  margin-top: 10px;  /* Khoảng cách giữa nội dung và nút */
+}
