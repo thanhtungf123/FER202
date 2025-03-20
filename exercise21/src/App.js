@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
-import UserList from './components/UserList';  // Thêm import UserList
+import UserList from './components/UserList';
 import DishList from './components/DishList';
 import UserDetail from './components/UserDetail';
 import DishDetail from './components/DishDetail';
@@ -12,8 +12,8 @@ import './styles.css';
 
 
 function App() {
-  const users = UserData();  // Lấy dữ liệu users từ UserData
-  const dishes = DishData(); // Lấy dữ liệu dishes từ DishData
+  const users = UserData();
+  const dishes = DishData();
 
   return (
     <Router>

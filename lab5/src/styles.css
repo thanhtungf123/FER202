@@ -1,0 +1,201 @@
+/* ============================= */
+/* 🌟 Global Styles */
+/* ============================= */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding-top: 20px;
+  }
+  
+  /* ============================= */
+  /* 🌟 Navbar Styles */
+  /* ============================= */
+  .navbar {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* ============================= */
+  /* 🌟 Home Page Styles */
+  /* ============================= */
+  .carousel img {
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  .image-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .image-grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-grid img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* ============================= */
+  /* 🌟 About Page Styles */
+  /* ============================= */
+  .about-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dc3545;
+    text-align: center;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    font-size: 2rem;
+    margin: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  /* ============================= */
+  /* 🌟 Contact Page Styles */
+  /* ============================= */
+  .contact-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container h2 {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .contact-container .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-container .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .contact-container .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ============================= */
+  /* 🌟 News Page Styles */
+  /* ============================= */
+  .news-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dc3545;
+  }
+  
+  .card {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .card a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ============================= */
+  /* 🌟 Quiz Page Styles */
+  /* ============================= */
+  .quiz-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #17a2b8;
+  }
+  
+  .quiz-container .card {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .quiz-container .btn-success {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .quiz-container .alert {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
