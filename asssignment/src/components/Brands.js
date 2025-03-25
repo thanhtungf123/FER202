@@ -10,7 +10,7 @@ function Brands() {
     // Fetch brands from db.json
     const fetchBrands = async () => {
       try {
-        const response = await fetch("http://localhost:3000/brands")
+        const response = await fetch("http://localhost:5000/brands")
         const data = await response.json()
         setBrands(data)
         setLoading(false)

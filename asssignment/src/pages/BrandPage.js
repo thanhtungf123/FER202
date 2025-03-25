@@ -18,7 +18,7 @@ function BrandPage() {
     const fetchBrandAndProducts = async () => {
       try {
         // Fetch brand info
-        const brandResponse = await fetch(`http://localhost:3000/brands?id=${id}`)
+        const brandResponse = await fetch(`http://localhost:5000/brands?id=${id}`)
         const brandData = await brandResponse.json()
 
         if (brandData.length > 0) {
@@ -26,7 +26,7 @@ function BrandPage() {
         }
 
         // Fetch all products
-        const productsResponse = await fetch(`http://localhost:3000/products`)
+        const productsResponse = await fetch(`http://localhost:5000/products`)
         const productsData = await productsResponse.json()
 
         // Filter products by brand (case-insensitive comparison)

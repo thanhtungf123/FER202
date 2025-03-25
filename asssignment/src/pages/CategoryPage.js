@@ -18,15 +18,15 @@ function CategoryPage() {
     const fetchCategoryAndProducts = async () => {
       try {
         // Fetch category info
-        const categoryResponse = await fetch(`http://localhost:3000/categories?id=${id}`)
+        const categoryResponse = await fetch(`http://localhost:5000/categories?id=${id}`)
         const categoryData = await categoryResponse.json()
 
         if (categoryData.length > 0) {
-          setCategoryName(categoryData[0].name)
+          setCategoryName(categoryData[0].name) 
         }
 
         // Fetch all products
-        const productsResponse = await fetch(`http://localhost:3000/products`)
+        const productsResponse = await fetch(`http://localhost:5000/products`)
         const productsData = await productsResponse.json()
 
         // Filter products by category (case-insensitive comparison)

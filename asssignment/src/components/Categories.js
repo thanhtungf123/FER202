@@ -10,7 +10,7 @@ function Categories() {
     // Fetch categories from db.json
     const fetchCategories = async () => {
       try {
-        const response = await fetch("http://localhost:3000/categories")
+        const response = await fetch("http://localhost:5000/categories")
         const data = await response.json()
         setCategories(data)
         setLoading(false)
